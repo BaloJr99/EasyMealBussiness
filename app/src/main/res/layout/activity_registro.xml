@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context=".Registro"
+    android:gravity="center">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registro_de_usuario"
+        android:layout_gravity="center"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="name"
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:inputType="text"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="surname"
+        android:id="@+id/etApellidop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellidoP"
+        android:inputType="text"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="second surname"
+        android:id="@+id/etApellidom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellidoM"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="username"
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/usuario"
+        android:inputType="text"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="password"
+        android:id="@+id/etContrasenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contra"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints="password"
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/titulo"
+        android:inputType="text"/>
+    
+    <TextView
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Normas"
+        android:textColor="#FF8181"
+        android:textSize="20sp">
+        
+    </TextView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sucripcion"
+            android:layout_weight="1"
+            android:textSize="20sp">
+
+        </TextView>
+        <Spinner
+            android:layout_weight="1"
+            android:id="@+id/spSuscripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MySpinnerLook">
+
+        </Spinner>
+
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+        <TextView
+            android:id="@+id/etFechaNacimiento"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:enabled="false"
+            android:text="@string/fechaUsuario" />
+        <ImageView
+            android:onClick="ClickFecha"
+            android:id="@+id/fechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_horario"
+            tools:ignore="ContentDescription">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="ClickCancelar"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/can"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cancelar"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:onClick="ClickRegistrarU"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/registrar"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

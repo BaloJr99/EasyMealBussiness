@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_usuario"
+    android:background="@drawable/fondo"
+    tools:context=".MenuUsuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/drawer_header">
+        </include>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_user"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btneditar"
+                android:onClick="ClickEditarU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                android:text="@string/editar"
+                tools:layout_editor_absoluteX="158dp"
+                tools:layout_editor_absoluteY="342dp" />
+
+            <Button
+                android:id="@+id/btneliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:onClick="ClickEliminarU"
+                android:layout_marginBottom="20dp"
+                android:text="@string/eliminar"
+                tools:layout_editor_absoluteX="158dp"
+                tools:layout_editor_absoluteY="342dp" />
+            <Button
+                android:id="@+id/ver"
+                android:onClick="ClickVerU"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:text="@string/ver_datos"
+                tools:layout_editor_absoluteX="158dp"
+                tools:layout_editor_absoluteY="342dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include layout="@layout/drawer_main">
+
+        </include>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

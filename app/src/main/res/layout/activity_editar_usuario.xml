@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarUsuario"
+    android:id="@+id/drawer_editaru">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/drawer_header"> </include>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/editar_cuenta" />
+
+
+        <EditText
+            android:id="@+id/editnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/nombre"
+            tools:ignore="Autofill,LabelFor" />
+
+
+        <EditText
+            android:id="@+id/editapellidop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/apellidoP"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/editapellidom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/apellidoM"
+            tools:ignore="Autofill,LabelFor" />
+
+        <EditText
+            android:id="@+id/editTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/titulo"
+            tools:ignore="Autofill,LabelFor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:id="@+id/editfecha"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:enabled="false"
+                android:text="@string/fechaUsuario" />
+            <ImageView
+                android:id="@+id/edtfechaNac"
+                android:onClick="ClickFechaU"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_horario"
+                tools:ignore="ContentDescription">
+            </ImageView>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btneditar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="ClickEditandoU"
+            android:text="@string/editar" />
+
+        <Button
+            android:id="@+id/btnregresar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/cancelar"
+            android:onClick="ClickCancelarU"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <include layout="@layout/drawer_main">
+
+        </include>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

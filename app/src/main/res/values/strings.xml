@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Easymeal Bussiness</string>
+    <string name="usuario">Usuario</string>
+    <string name="contra">Contraseña</string>
+    <string name="login">Login</string>
+    <string name="registrar">Registrar</string>
+    <string name="em">EasyMeal Bussiness</string>
+    <string name="inicio">Inicio</string>
+    <string name="salir">Salir</string>
+    <string name="horario">Horarios de Clientes</string>
+    <string name="chats">Conversaciones</string>
+    <string name="registro_de_usuario">Registro de usuario</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidoP">Apellido Paterno</string>
+    <string name="apellidoM">Apellido Materno</string>
+    <string name="fechaUsuario">--/--/--</string>
+    <string name="Normas">Para registrarse en la app debe adquirir almenos una suscripcion a la app</string>
+    <string name="titulo">Título</string>
+    <string name="sucripcion">Sucripción</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="ver_datos">VER DATOS</string>
+    <string name="datos_del_usuario">DATOS DEL USUARIO</string>
+    <string name="editar_cuenta">EDITAR CUENTA</string>
+</resources>
